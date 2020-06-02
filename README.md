@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple rails api application in which jwt gem is used for providing authenticatio.
 
-Things you may want to cover:
+To use this ruby gem;
+gem 'jwt' is typed in Gemfile and then from cmd run bundle install.
 
-* Ruby version
+Also to provide authentication bcyrpt gem is used.
+to install this gem, type
+gem 'bcyrpt' or it might be there in your gemfile but is commented. So remove the comment and run bundle install from cmd.
 
-* System dependencies
+User model is crested which is having attributes as follow;
 
-* Configuration
+username as string
+name as string
+email as string
+password_digest as string
 
-* Database creation
+Create json_web_token.rb file in lib directory.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This file contains encoding and decoding methods to encode and decode the token.
